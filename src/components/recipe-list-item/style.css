@@ -1,0 +1,9 @@
+.recipe-item {
+	width: 300px;
+	border: 1px solid black;
+	text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
