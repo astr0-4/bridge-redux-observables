@@ -4,7 +4,8 @@ import { connect } from 'react-redux';
 import { getRecipeByName } from './redux/actions/recipe.actions';
 import RecipeList from './containers/recipe-list';
 import SearchBar from './containers/search-bar';
-
+import RecipeDetailContainer from './containers/recipe-detail-container/index'
+import './style.css'
 
 // remember, props should now have data coming in from redux state!
 // because of this, we don't even need to make our 'top level' components stateful!
@@ -15,8 +16,17 @@ const App = props =>
         {props.test}
         <h2>Search Below for Some Tasty Recipes!</h2>
       </div>
-      <SearchBar />
-      <RecipeList />
+      <div className="search-container">
+        <SearchBar />
+      </div>
+      <div className="main-container">
+        <div className="recipe-list-container">
+          <RecipeList />
+        </div>
+        <div className="recipe-detail-container">
+          <RecipeDetailContainer />
+        </div>
+      </div>
     </div>
   );
 

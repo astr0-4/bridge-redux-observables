@@ -1,0 +1,15 @@
+.main-container {
+	display: flex;
+	align-items: row;
+}
+
+.recipe-list-container {
+	display: flex;
+	flex: 1 1 auto;
+}
+
+.recipe-detail-container {
+	display: flex;
+	flex: 2 1 auto;
+
+}

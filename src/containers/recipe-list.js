@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { selectRecipe } from '../redux/actions/index';
 import { bindActionCreators } from 'redux';
 import RecipeListItem from '../components/recipe-list-item/index'
-import { getRecipeByName } from '../redux/actions/recipe.actions';
 
 class RecipeList extends Component {
 	renderList() {

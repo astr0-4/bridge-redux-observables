@@ -1,0 +1,9 @@
+.recipe-container {
+	display: flex;
+	justify-content: center;
+
+}
+
+.recipe-title {
+	display: flex;
+}
