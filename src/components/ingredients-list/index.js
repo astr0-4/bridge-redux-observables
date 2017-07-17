@@ -1,11 +1,11 @@
 import React from 'react';
-
+import './style.css'
 const IngredientsList = ({ingredients}) => {
 	console.log("ingredients: ", ingredients)
 	return (
-		<div>
+		<div className="ingredients-container">
 		{ingredients.map((ingredient) => {
-			return (<li>
+			return (<li className="ingredient-item">
 					{ingredient}
 					</li>
 			)
@@ -16,13 +16,3 @@ const IngredientsList = ({ingredients}) => {
 }
 
 export default IngredientsList;
-	// 	renderList() {
-	// 	return this.props.recipes.map((recipe) => {
-	// 		return (
-	// 			<RecipeListItem 
-	// 			key={recipe.uri} 
-	// 			onRecipeSelect={() => this.props.selectRecipe(recipe)}
-	// 			recipe={recipe} />
-	// 		)
-	// 	})
-	// }

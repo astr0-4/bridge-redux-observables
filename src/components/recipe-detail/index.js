@@ -13,13 +13,4 @@ const RecipeDetail = ({ recipe }) => {
 	)
 }
 
-// return this.props.recipes.map((recipe) => {
-// 			return (
-// 				<RecipeListItem 
-// 				key={recipe.uri} 
-// 				onRecipeSelect={() => this.props.selectRecipe(recipe)}
-// 				recipe={recipe} />
-// 			)
-// 		})
-
 export default RecipeDetail;

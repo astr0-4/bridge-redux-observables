@@ -1,0 +1,8 @@
+.ingredients-container {
+	width: 80%;
+	padding: 20px;
+}
+
+.ingredient-item {
+	text-align: left;
+}
