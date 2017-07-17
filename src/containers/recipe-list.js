@@ -19,7 +19,7 @@ class RecipeList extends Component {
 	render() {
 		return (
 			<ul>
-			{this.renderList()}
+				{this.renderList()}
 			</ul>
 		)
 	}

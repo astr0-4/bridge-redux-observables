@@ -10,8 +10,8 @@ import { Observable } from 'rxjs';
 import 'rxjs/add/operator/mergeMap';
 
 
-const APP_ID = 'e7e216b0';
-const APP_KEY = '0b5ad1a1dcce889c9ea6a9df1e16a318';
+const APP_ID = 'd039bda9';
+const APP_KEY = '8df7d59e3361bfea7cd3095121aac7b7';
 
 const BASE_ENDPOINT = `https://api.edamam.com/search?app_id=${APP_ID}&app_key=${APP_KEY}`;
 

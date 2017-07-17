@@ -1,9 +1,14 @@
 .recipe-container {
 	display: flex;
-	justify-content: center;
-
+	align-items: center;
+	flex-direction: column;
 }
 
 .recipe-title {
 	display: flex;
+	text-align: center;
+}
+
+.img-container {
+	width: 100px;
 }

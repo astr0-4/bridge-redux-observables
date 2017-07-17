@@ -12,10 +12,6 @@ import './style.css'
 const App = props =>
   (
     <div className="App">
-      <div className="App-header">
-        {props.test}
-        <h2>Search Below for Some Tasty Recipes!</h2>
-      </div>
       <div className="search-container">
         <SearchBar />
       </div>
@@ -44,3 +40,7 @@ export default connectConfig(App);
 //         <button onClick={() => props.getRecipeByName('omelet')}>Click me for Omelet</button>
 //       </p>
 //       {props.recipeList.map(recipe => <h3 key={recipe.uri}>name: {recipe.label} calories: {recipe.calories}</h3>)}
+      // <div className="App-header">
+      //   {props.test}
+      //   <h2>Search Below for Some Tasty Recipes!</h2>
+      // </div>
