@@ -3,7 +3,7 @@ import './App.css';
 import { connect } from 'react-redux';
 import { getRecipeByName } from './redux/actions/recipe.actions';
 import RecipeList from './containers/recipe-list';
-import SearchBar from './containers/search-bar';
+import SearchBar from './containers/search-bar/index';
 import RecipeDetailContainer from './containers/recipe-detail-container/index'
 import './style.css'
 
