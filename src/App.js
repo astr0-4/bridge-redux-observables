@@ -1,38 +1,35 @@
 import React from 'react';
 import './App.css';
 import { connect } from 'react-redux';
-import { getRecipeByName } from './redux/actions/recipe.actions';
+import { getRecipeByName, updateSearchText } from './redux/actions/recipe.actions';
 import RecipeList from './containers/recipe-list';
 import SearchBar from './containers/search-bar/index';
 import RecipeDetailContainer from './containers/recipe-detail-container/index'
 import './style.css'
 
-// remember, props should now have data coming in from redux state!
-// because of this, we don't even need to make our 'top level' components stateful!
 const App = props =>
   (
     <div className="App">
       <div className="search-container">
-        <SearchBar />
+        <SearchBar value={props.searchText} onClick={() => props.getRecipeByName(props.searchText)} onChange={event => props.updateSearchText(event.target.value)}/>
       </div>
       <div className="main-container">
         <div className="recipe-list-container">
-          <RecipeList />
+          <RecipeList recipes={props.recipeList.list}/>
         </div>
         <div className="recipe-detail-container">
           <RecipeDetailContainer />
         </div>
       </div>
     </div>
+    console.log(props)
   );
 
-
-
 const connectConfig = connect(state => ({
-  test: 'foo', // how could I potentially apply the value of the reducer on line 6 of reducers/index.js?
   recipeList: state.recipe.list,
+  searchText: state.recipe.searchText
 }), {
-  getRecipeByName: getRecipeByName // how can we simplify this, do we remember?
+  getRecipeByName, updateSearchText
 });
 
 export default connectConfig(App);

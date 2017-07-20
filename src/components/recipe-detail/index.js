@@ -3,7 +3,6 @@ import './style.css'
 import IngredientList from '../ingredients-list/index';
 
 const RecipeDetail = ({ recipe }) => {
-	console.log(recipe)
 	return (
 		<div className="recipe-container">
 			<h3 className="recipe-title">{recipe.label}</h3>

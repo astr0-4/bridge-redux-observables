@@ -14,14 +14,16 @@ export default (state = DEFAULT_STATE, action) => {
     // check recipe.epics.js to see where this action is being created
     case RECIPE_ACTIONS.RECIPES_RECEIVED_SUCCESS:
       return {...state, list: action.payload, isError: false };
-
-
       // We'll handle errors on a later date :) but if you feel like you might have an idea, or want to try it on your own...
       // https://github.com/redux-observable/redux-observable/blob/master/docs/recipes/ErrorHandling.md
     case RECIPE_ACTIONS.RECIPES_RECEIVED_ERROR:
       return {...state, list: [], isError: true };
 
+    case RECIPE_ACTIONS.UPDATE_SEARCH_TEXT:
+      return {...state, searchTect: action.payload };
+
     default:
       return state;
+
   }
 }
